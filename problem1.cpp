@@ -15,7 +15,7 @@ vector<int> countDivisibles(vector<int> &scrollA, vector<int> &scrollB) {
     vector<int> result(scrollB.size(), 0);
 
     // Bob counts numbers in Scroll A that are divisible by each powerful divisor in Scroll B
-    for (size_t i = 0; i < scrollB.size(); ++i) {
+    for (int i = 0; i < scrollB.size(); ++i) {
         int powerfulDivisor = scrollB[i];
         int divisibleCount = 0;
 
