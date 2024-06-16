@@ -26,3 +26,57 @@ Constraints
 The length of array a is between 1 and 10^5.
 The length of array b is between 1 and 100.
 Each element in array a and b is a positive integer between 1 and 10^9.
+
+
+TEST CASES: 
+Test Case 1: Minimum Input Size
+Scroll A: {1}
+Scroll B: {1}
+Expected Output: {1}
+
+Test Case 2: No Common Divisors
+Scroll A: {5, 7, 11, 13, 17}
+Scroll B: {2, 3}
+Expected Output: {0, 0}
+
+Test Case 3: All Elements are Divisors
+Scroll A: {6, 12, 18, 24, 30}
+Scroll B: {3}
+Expected Output: {5}
+
+Test Case 4: Mixed Divisors
+Scroll A: {10, 15, 20, 25, 30, 35, 40, 45, 50}
+Scroll B: {5, 10}
+Expected Output: {9, 5}
+
+Test Case 5: Large Values
+Scroll A: {1000000000, 2000000000, 3000000000, 4000000000, 5000000000}
+Scroll B: {1000000000}
+Expected Output: {5}
+
+Test Case 6: Large Input Size
+Scroll A: [1, 2, 3, ..., 100000] (all numbers from 1 to 100000)
+Scroll B: {2, 5, 10}
+Expected Output: {50000, 20000, 10000}
+
+Test Case 7: Multiple Divisors with Common Factors
+Scroll A: {30, 60, 90, 120, 150}
+Scroll B: {2, 3, 5}
+Expected Output: {5, 5, 5}
+
+Test Case 8: Elements of Scroll A are Powers of Two
+Scroll A: {2, 4, 8, 16, 32, 64, 128, 256, 512, 1024}
+Scroll B: {2, 4, 8, 16}
+Expected Output: {10, 9, 8, 7}
+
+Test Case 9: Single Element in Scroll B
+Scroll A: {10, 20, 30, 40, 50}
+Scroll B: {10}
+Expected Output: {5}
+
+Test Case 10: Large Scroll A with Primes in Scroll B
+Scroll A: [1, 2, 3, ..., 100000] (all numbers from 1 to 100000)
+Scroll B: {101, 103, 107}
+Expected Output: {990, 970, 936}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
