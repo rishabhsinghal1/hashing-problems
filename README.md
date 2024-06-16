@@ -28,7 +28,8 @@ The length of array b is between 1 and 100.
 Each element in array a and b is a positive integer between 1 and 10^9.
 
 
-TEST CASES: 
+TEST CASES:
+
 Test Case 1: Minimum Input Size
 Scroll A: {1}
 Scroll B: {1}
