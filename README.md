@@ -1,6 +1,6 @@
 # hashing-problems
 
-                                                                                                           _Problem - 1_
+Problem - 1:
 Problem name - The Great Kingdom’s Divisibility Challenge
 In the Great Kingdom of Numerica, the wise King Arithmos loves challenges related to numbers. To entertain his subjects and promote mathematical knowledge, he devised an intriguing problem and announced a grand prize for the one who could solve it.
 
