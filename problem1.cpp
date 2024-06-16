@@ -2,15 +2,17 @@
 #include <vector>
 #include <unordered_map>
 
-std::vector<int> countDivisibles(const std::vector<int> &scrollA, const std::vector<int> &scrollB) {
-    std::unordered_map<int, int> sacredFrequency;
+using namespace std;
+
+vector<int> countDivisibles(vector<int> &scrollA, vector<int> &scrollB) {
+    unordered_map<int, int> sacredFrequency;
 
     // Alice precomputes the frequency of each sacred number in Scroll A
     for (int sacredNumber : scrollA) {
         sacredFrequency[sacredNumber]++;
     }
 
-    std::vector<int> result(scrollB.size(), 0);
+    vector<int> result(scrollB.size(), 0);
 
     // Bob counts numbers in Scroll A that are divisible by each powerful divisor in Scroll B
     for (size_t i = 0; i < scrollB.size(); ++i) {
@@ -31,25 +33,25 @@ std::vector<int> countDivisibles(const std::vector<int> &scrollA, const std::vec
 }
 
 int main() {
-    std::vector<int> scrollA = {12, 24, 36, 48, 60};
-    std::vector<int> scrollB = {2, 3, 4};
+    vector<int> scrollA = {12, 24, 36, 48, 60};
+    vector<int> scrollB = {2, 3, 4};
 
-    std::vector<int> result = countDivisibles(scrollA, scrollB);
-    std::cout << "Result: ";
+    vector<int> result = countDivisibles(scrollA, scrollB);
+    cout << "Result: ";
     for (int count : result) {
-        std::cout << count << " ";
+        cout << count << " ";
     }
-    std::cout << std::endl; // Output: Result: 5 5 3
+    cout << endl; // Output: Result: 5 5 3
 
-    std::vector<int> scrollA2 = {5, 10, 15, 20, 25};
-    std::vector<int> scrollB2 = {2, 3, 5};
+    vector<int> scrollA2 = {5, 10, 15, 20, 25};
+    vector<int> scrollB2 = {2, 3, 5};
 
     result = countDivisibles(scrollA2, scrollB2);
-    std::cout << "Result: ";
+    cout << "Result: ";
     for (int count : result) {
-        std::cout << count << " ";
+        cout << count << " ";
     }
-    std::cout << std::endl; // Output: Result: 2 0 5
+    cout << endl; // Output: Result: 2 0 5
 
     return 0;
 }
