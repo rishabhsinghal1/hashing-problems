@@ -82,3 +82,65 @@ Scroll B: {101, 103, 107}
 Expected Output: {990, 970, 936}
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Problem - 2:
+
+Problem Statement
+
+You have an array of integers that is the result of several "Copy-Paste" operations. A "Copy-Paste" operation allows you to copy any subarray (contiguous sequence) of the array and paste it after any position in the array. Given the final array, determine the smallest possible original array that could have resulted in the given array using these operations.
+
+Input
+The first line contains an integer T representing the number of test cases. Each test case consists of two lines:
+
+The first line contains an integer 𝑁, the length of the array.
+
+The second line contains 𝑁 space-separated integers representing the array.
+
+Output
+
+For each test case, output the length of the smallest possible original array.
+
+Example 1: 
+
+input: 
+
+N = 5
+array = [1,1,1,1,1]
+
+output: 1
+
+Example 2:
+
+input:
+
+N = 5
+array = [1,2,3,1,2]
+
+output: 3
+
+
+TESTCASES
+
+input
+5
+1 2 3 4 5
+output
+5
+
+input
+6
+1 2 3 1 2 3
+output
+3
+
+input
+10
+3 1 4 1 5 9 2 6 5 3
+output
+8
+
+input 
+10
+8 8 8 8 8 8 8 8 8 8
+output
+1
